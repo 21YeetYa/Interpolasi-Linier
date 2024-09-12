@@ -1,4 +1,5 @@
 # Interpolasi-Linier
+Aplikasi ini dikumpulkan untuk memenuhi tugas Matakuliah Metode Numerik
 Menghitung interpolasi sesuai rumus
 
-![image](https://github.com/user-attachments/assets/d56e66c7-0cab-44d2-adf6-dd87a59b4c02)
+![image](https://github.com/user-attachments/assets/bb6a9057-c92e-42e1-8527-1b14ab09e1a4)
