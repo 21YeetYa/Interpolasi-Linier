@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interpolasi Linier</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Interpolasi Linier</h1>
+      <form id="interpolation-form">
+        <div class="input-group">
+          <label for="x0">x0:</label>
+          <input type="numeric" step="any" id="x0" name="x0" required />
+        </div>
+        <div class="input-group">
+          <label for="y0">f(x0):</label>
+          <input type="numeric" step="any" id="y0" name="y0" required />
+        </div>
+        <div class="input-group">
+          <label for="x1">x1:</label>
+          <input type="numeric" step="any" id="x1" name="x1" required />
+        </div>
+        <div class="input-group">
+          <label for="y1">f(x1):</label>
+          <input type="numeric" step="any" id="y1" name="y1" required />
+        </div>
+        <div class="input-group">
+          <label for="x">x:</label>
+          <input type="numeric" step="any" id="x" name="x" required />
+        </div>
+        <button type="submit" class="btn">Calculate</button>
+      </form>
+      <h2>
+      <div>
+        <img
+          src="{{ url_for('static', filename='RUMUS.jpg') }}"
+          alt="Example Image"
+          class="logo"
+        />
+      </div>
+      <h2 id="result"></h2>
+      <canvas id="myChart"></canvas>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </body>
+</html>
